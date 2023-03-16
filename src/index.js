@@ -1,5 +1,5 @@
-function test() {
-  alert('hello');
-}
+import { contentDiv, headerDiv } from './homepage';
 
-test();
+
+
+
