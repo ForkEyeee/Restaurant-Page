@@ -1,5 +1,22 @@
-/* .header {
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url(../fonts/OpenSans-Regular.ttf) format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: OpenSans-Regular;
+}
+
+.header {
   display: flex;
   justify-content: space-around;
   color: red;
-} */
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+

@@ -1,4 +1,6 @@
-import { contentDiv, headerDiv } from './homepage';
+import content from './homepage.js';
+
+content()
 
 
 
