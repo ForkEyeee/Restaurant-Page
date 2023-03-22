@@ -19,4 +19,13 @@ body {
   height: auto;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 20rem;
+}
 
+.grid-item::after {
+  content: "Set 'mode' option to 'development' or 'production' to enable defaults for each environment.";
+}
