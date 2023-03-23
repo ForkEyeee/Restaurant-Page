@@ -1,4 +1,4 @@
-export default function pageMake() {
+export default function loadContact() {
   const form = document.createElement('form');
   document.body.appendChild(form);
 
