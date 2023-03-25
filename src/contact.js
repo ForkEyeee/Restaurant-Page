@@ -1,6 +1,7 @@
 export default function loadContact() {
   const form = document.createElement('form');
-  document.body.appendChild(form);
+  const contentDiv = document.getElementById('content')
+  contentDiv.appendChild(form);
 
   const input1 = document.createElement('input');
 
