@@ -3,7 +3,7 @@ export default function loadHomePage() {
   const headerDiv = document.createElement('div');
   const textDiv = document.createElement('div');
   const imgDiv = document.createElement('div');
-  const para = document.createElement('p')
+  const para = document.createElement('p');
 
   headerDiv.className = 'header';
   contentDiv.appendChild(headerDiv);
@@ -24,18 +24,16 @@ export default function loadHomePage() {
   headerDiv.appendChild(btn3);
 
   const myImage = new Image();
-  myImage.src =
-    'bacon.jpeg';
+  myImage.src = 'bacon.jpeg';
   myImage.setAttribute('id', 'img');
   imgDiv.appendChild(myImage);
   contentDiv.appendChild(imgDiv).classList = 'img-div';
 
-  contentDiv.appendChild(textDiv)
+  contentDiv.appendChild(textDiv);
   textDiv.setAttribute('id', 'text-div');
   textDiv.appendChild(para);
-  para.classList = 'para'
-  
- 
+  para.classList = 'para';
+
   para.innerHTML =
     "We cook up bright, bold Korean dishes that are totally unique in Vancouver, you won't find our flavors and colors anywhere else. And we serve it all hot, fast and in a format that’s affordable and comfortable for urban Vancouverites to enjoy.";
 
@@ -53,27 +51,25 @@ export default function loadHomePage() {
   return { content };
 }
 
-export function loadElse () {
+export function loadElse() {
   const contentDiv = document.getElementById('content');
   const textDiv = document.createElement('div');
   const imgDiv = document.createElement('div');
-  const para = document.createElement('p')
-
+  const para = document.createElement('p');
 
   const myImage = new Image();
-  myImage.src =
-    'file:///C:/Users/Jayden%20Brown/Desktop/top/Restaurant%20Page/img/catering-g64e518873_1920.jpeg';
+  myImage.src = './img/bacon.jpeg';
   myImage.setAttribute('id', 'img');
   imgDiv.appendChild(myImage);
   contentDiv.appendChild(imgDiv).classList = 'img-div';
 
-  contentDiv.appendChild(textDiv)
+  contentDiv.appendChild(textDiv);
   textDiv.appendChild(para);
   textDiv.setAttribute('id', 'text-div');
 
-  para.classList = 'para'
+  para.classList = 'para';
 
   para.innerHTML =
     "We cook up bright, bold Korean dishes that are totally unique in Vancouver, you won't find our flavors and colors anywhere else. And we serve it all hot, fast and in a format that’s affordable and comfortable for urban Vancouverites to enjoy.";
-  console.log('AWDAWDDAWD')
+  console.log('AWDAWDDAWD');
 }
