@@ -10,7 +10,10 @@ export default function loadMenu() {
   grid.appendChild(menuItem1).classList = 'grid-item';
   grid.appendChild(menuItem2).classList = 'grid-item';
   grid.appendChild(menuItem3).classList = 'grid-item';
-  console.log('sawd');
+  let myImage2 = document.createElement('img')
+  myImage2.src = './img/leaves.jpg'
+  myImage2.setAttribute('id', 'img2');
+  menuItem1.appendChild(myImage2)
   const content = {
     grid,
     menuGrid,
