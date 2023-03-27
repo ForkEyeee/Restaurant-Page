@@ -4,38 +4,42 @@ export default function loadHomePage() {
   const textDiv = document.createElement('div');
   const imgDiv = document.createElement('div');
   const para = document.createElement('p');
-
-  headerDiv.className = 'header';
-  contentDiv.appendChild(headerDiv);
-
+  const titleDiv = document.createElement('div');
   const btn1 = document.createElement('button');
-  btn1.innerHTML = 'Home';
-  btn1.setAttribute('id', 'btn1');
   const btn2 = document.createElement('button');
-  btn2.innerHTML = 'Menu';
-  btn2.setAttribute('id', 'btn2');
   const btn3 = document.createElement('button');
-  btn3.innerHTML = 'Contact';
-  btn3.setAttribute('id', 'btn3');
-  console.log('test');
 
+  contentDiv.appendChild(headerDiv);
+  contentDiv.appendChild(imgDiv);
+  contentDiv.appendChild(textDiv);
+  headerDiv.appendChild(titleDiv);
   headerDiv.appendChild(btn1);
   headerDiv.appendChild(btn2);
   headerDiv.appendChild(btn3);
-
-  const myImage = new Image();
-  myImage.src = 'bacon.jpeg';
-  myImage.setAttribute('id', 'img');
-  imgDiv.appendChild(myImage);
-  contentDiv.appendChild(imgDiv).classList = 'img-div';
-
-  contentDiv.appendChild(textDiv);
-  textDiv.setAttribute('id', 'text-div');
   textDiv.appendChild(para);
-  para.classList = 'para';
 
+  titleDiv.classList = 'title-div';
+  imgDiv.classList = 'img-div';
+  para.classList = 'para';
+  headerDiv.classList = 'header';
+  btn1.setAttribute('id', 'btn1');
+  btn2.setAttribute('id', 'btn2');
+  btn3.setAttribute('id', 'btn3');
+  textDiv.setAttribute('id', 'text-div');
+
+  titleDiv.innerHTML = 'Really Great Restaurant';
+  btn1.innerHTML = 'Home';
+  btn2.innerHTML = 'Menu';
+  btn3.innerHTML = 'Contact';
   para.innerHTML =
     "We cook up bright, bold Korean dishes that are totally unique in Vancouver, you won't find our flavors and colors anywhere else. And we serve it all hot, fast and in a format that’s affordable and comfortable for urban Vancouverites to enjoy.";
+
+  const myImage = new Image();
+  myImage.src = '../img/bacon.jpeg';
+  myImage.setAttribute('id', 'img');
+  imgDiv.appendChild(myImage);
+
+  btn1.disabled = true;
 
   const content = {
     contentDiv,
@@ -47,29 +51,5 @@ export default function loadHomePage() {
     btn2,
     btn3,
   };
-
   return { content };
-}
-
-export function loadElse() {
-  const contentDiv = document.getElementById('content');
-  const textDiv = document.createElement('div');
-  const imgDiv = document.createElement('div');
-  const para = document.createElement('p');
-
-  const myImage = new Image();
-  myImage.src = './img/bacon.jpeg';
-  myImage.setAttribute('id', 'img');
-  imgDiv.appendChild(myImage);
-  contentDiv.appendChild(imgDiv).classList = 'img-div';
-
-  contentDiv.appendChild(textDiv);
-  textDiv.appendChild(para);
-  textDiv.setAttribute('id', 'text-div');
-
-  para.classList = 'para';
-
-  para.innerHTML =
-    "We cook up bright, bold Korean dishes that are totally unique in Vancouver, you won't find our flavors and colors anywhere else. And we serve it all hot, fast and in a format that’s affordable and comfortable for urban Vancouverites to enjoy.";
-  console.log('AWDAWDDAWD');
 }
