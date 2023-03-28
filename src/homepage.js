@@ -40,16 +40,4 @@ export default function loadHomePage() {
   imgDiv.appendChild(myImage);
 
   btn1.disabled = true;
-
-  const content = {
-    contentDiv,
-    headerDiv,
-    myImage,
-    textDiv,
-    imgDiv,
-    btn1,
-    btn2,
-    btn3,
-  };
-  return { content };
 }
