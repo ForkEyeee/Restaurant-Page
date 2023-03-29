@@ -3,6 +3,7 @@ import loadMenu from './menu.js';
 import loadContact from './contact.js';
 import './styles.css';
 
+
 function setEnabled(allButtons) {
   allButtons.forEach((element) => {
     element.disabled = false;
