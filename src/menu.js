@@ -13,19 +13,22 @@ export default function loadMenu() {
   grid.appendChild(menuItem4).classList = 'grid-item';
 
   const myImage = new Image();
-  myImage.src = '../img/onions.jpg';
+  myImage.src = onionsImage;
   myImage.setAttribute('id', 'img2');
   menuItem.appendChild(myImage);
+
   const myImage2 = new Image();
-  myImage2.src = '../img/pepperoni.jpg';
+  myImage2.src = pepperoniImage;
   myImage2.setAttribute('id', 'img3');
   menuItem2.appendChild(myImage2);
+
   const myImage3 = new Image();
-  myImage3.src = '../img/cheese-onion.jpg';
+  myImage3.src = cheeseOnionImage;
   myImage3.setAttribute('id', 'img4');
   menuItem3.appendChild(myImage3);
+
   const myImage4 = new Image();
-  myImage4.src = '../img/mushroom.jpg';
+  myImage4.src = mushroomImage;
   myImage4.setAttribute('id', 'img5');
-  menuItem4.appendChild(myImage4);
+  menuItem4.appendChild(myImage4)
 }

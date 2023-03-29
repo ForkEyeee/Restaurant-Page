@@ -35,7 +35,7 @@ export default function loadHomePage() {
     "We cook up bright, bold Korean dishes that are totally unique in Vancouver, you won't find our flavors and colors anywhere else. And we serve it all hot, fast and in a format that’s affordable and comfortable for urban Vancouverites to enjoy.";
 
   const myImage = new Image();
-  myImage.src = '../img/bacon.jpeg';
+  myImage.src = 'baconImage';
   myImage.setAttribute('id', 'img');
   imgDiv.appendChild(myImage);
 
