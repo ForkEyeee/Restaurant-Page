@@ -1,3 +1,8 @@
+import mushroomImage from '../img/mushroom.jpg';
+import pepperoniImage from '../img/pepperoni.jpg';
+import cheeseOnionImage from '../img/cheese-onion.jpg';
+import onionsImage from '../img/onions.jpg';
+
 export default function loadMenu() {
   const contentDiv2 = document.getElementById('content');
   const grid = document.createElement('div');
@@ -13,7 +18,7 @@ export default function loadMenu() {
   grid.appendChild(menuItem4).classList = 'grid-item';
 
   const myImage = new Image();
-  myImage.src = onionsImage;
+  myImage.src = mushroomImage;
   myImage.setAttribute('id', 'img2');
   menuItem.appendChild(myImage);
 
@@ -28,7 +33,7 @@ export default function loadMenu() {
   menuItem3.appendChild(myImage3);
 
   const myImage4 = new Image();
-  myImage4.src = mushroomImage;
+  myImage4.src = onionsImage;
   myImage4.setAttribute('id', 'img5');
-  menuItem4.appendChild(myImage4)
+  menuItem4.appendChild(myImage4);
 }

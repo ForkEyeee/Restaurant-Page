@@ -1,3 +1,5 @@
+import baconImage from '../img/bacon.jpeg';
+
 export default function loadHomePage() {
   const contentDiv = document.getElementById('content');
   const headerDiv = document.createElement('div');
