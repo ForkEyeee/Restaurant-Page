@@ -1,8 +1,6 @@
 import loadHomePage from './homepage.js';
 import loadMenu from './menu.js';
 import loadContact from './contact.js';
-import './styles.css';
-
 
 function setEnabled(allButtons) {
   allButtons.forEach((element) => {
