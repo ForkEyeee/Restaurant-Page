@@ -2,12 +2,11 @@ import loadHomePage from './homepage.js';
 import loadMenu from './menu.js';
 import loadContact from './contact.js';
 import './styles.css';
-import baconImage from './img/bacon.jpeg';
-import onionsImage from './img/onions.jpg';
-import pepperoniImage from './img/pepperoni.jpg';
-import cheeseOnionImage from './img/cheese-onion.jpg';
-import mushroomImage from './img/mushroom.jpg';
-
+import baconImage from '../img/bacon.jpeg';
+import onionsImage from '../img/onions.jpg';
+import pepperoniImage from '../img/pepperoni.jpg';
+import cheeseOnionImage from '../img/cheese-onion.jpg';
+import mushroomImage from '../img/mushroom.jpg';
 
 function setEnabled(allButtons) {
   allButtons.forEach((element) => {
