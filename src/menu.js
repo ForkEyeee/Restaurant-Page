@@ -1,8 +1,3 @@
-import mushroomImage from '../img/mushroom.jpg';
-import pepperoniImage from '../img/pepperoni.jpg';
-import cheeseOnionImage from '../img/cheese-onion.jpg';
-import onionsImage from '../img/onions.jpg';
-
 export default function loadMenu() {
   const contentDiv2 = document.getElementById('content');
   const grid = document.createElement('div');
@@ -18,22 +13,22 @@ export default function loadMenu() {
   grid.appendChild(menuItem4).classList = 'grid-item';
 
   const myImage = new Image();
-  myImage.src = mushroomImage;
+  myImage.src = './images/mushroom.jpg';
   myImage.setAttribute('id', 'img2');
   menuItem.appendChild(myImage);
 
   const myImage2 = new Image();
-  myImage2.src = pepperoniImage;
+  myImage2.src = './images/pepperoni.jpg';
   myImage2.setAttribute('id', 'img3');
   menuItem2.appendChild(myImage2);
 
   const myImage3 = new Image();
-  myImage3.src = cheeseOnionImage;
+  myImage3.src = './images/onions.jpg';
   myImage3.setAttribute('id', 'img4');
   menuItem3.appendChild(myImage3);
 
   const myImage4 = new Image();
-  myImage4.src = onionsImage;
+  myImage4.src = './images/cheese-onion.jpg';
   myImage4.setAttribute('id', 'img5');
   menuItem4.appendChild(myImage4);
 }
