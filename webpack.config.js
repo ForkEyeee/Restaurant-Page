@@ -50,7 +50,9 @@ const config = {
       filename: 'styles.css',
     }),
     new CopyWebpackPlugin({
-      patterns: [{ from: 'img', to: 'images' }],
+      patterns: [
+        { from: 'img', to: 'images' },
+      ],
     }),
   ],
 };
